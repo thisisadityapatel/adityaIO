@@ -1,0 +1,61 @@
+.container{
+    max-width: 52vw;
+}
+body{
+    font-family: 'Quicksand';
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.ruBlueColor {
+    color: #004C9B !important;
+}
+.ruYellowColor {
+    color: #FFDC00 !important;
+}
+.ruLinkHref{
+    text-decoration: none;
+}
+.ruLinkHref:hover{
+    text-decoration: underline;
+}
+.fcScotiaRed{
+    color: #EC111A;
+}
+p{
+    margin-top: 1.3rem;
+}
+.linkTextColor{
+    color: #637c36;
+    text-decoration: none
+}
+.image4Class{
+    width: 100%;
+    height: auto;
+}
+.linkedinColor{
+    color: #0072b1
+}
+.linkedinColor:hover{
+    color: #005380
+}
+.instaColor{
+    color: #fb3958
+}
+.instaColor:hover{
+    color: #e10529
+}
+.githubColor{
+    color: #171515
+}
+.githubColor:hover{
+    color:  #928787;
+}
+.outlookColor{
+    color: #00A4EF
+}
+.outlookColor:hover{
+    color: #007ab3
+}
