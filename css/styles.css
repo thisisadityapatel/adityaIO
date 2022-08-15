@@ -34,6 +34,9 @@ p{
 .image4Class{
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
 }
 .linkedinColor{
     color: #0072b1
