@@ -1,0 +1,10 @@
+body{
+    animation: fadeIn 2.5s;
+    background-image: url("./digital_art3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 300%;
+}
