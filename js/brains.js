@@ -27,4 +27,10 @@ $(document).ready(function(){
         $(".snowInputSpan").html(snow);
         $(".rainInputSpan").html(rain);
     });*/
+
+    $(document).on("click", ".aboutNav", function(){
+        var thisDiv = $(this).data("navto");
+        $(".aboutDivision").addClass("d-none");
+        $("#" + thisDiv).removeClass("d-none");
+    })
 })

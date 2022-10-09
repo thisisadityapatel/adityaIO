@@ -45,11 +45,11 @@
                 <!--Side Navigation Bar-->
                 <div class="col-2">
                     <div class="list-group mt-2">
-                        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">Introduction</button>
-                        <button type="button" class="list-group-item list-group-item-action"> <i class="bi bi-journals"></i> Education</button>
-                        <button type="button" class="list-group-item list-group-item-action"><i class="bi bi-laptop"></i> Work</button>
-                        <button type="button" class="list-group-item list-group-item-action"><i class="bi bi-lightning-charge-fill"></i> Projects</button>
-                        <button type="button" class="list-group-item list-group-item-action"><i class="bi bi-nintendo-switch "></i> Hobbies</button>
+                        <button type="button" class="list-group-item list-group-item-action aboutNav active" aria-current="true" data-navto="introduction">Introduction</button>
+                        <button type="button" class="list-group-item list-group-item-action aboutNav" data-navto="education"> <i class="bi bi-journals"></i> Education</button>
+                        <button type="button" class="list-group-item list-group-item-action aboutNav" data-navto="work"><i class="bi bi-laptop"></i> Work</button>
+                        <button type="button" class="list-group-item list-group-item-action aboutNav" data-navto="projects"><i class="bi bi-lightning-charge-fill"></i> Projects</button>
+                        <button type="button" class="list-group-item list-group-item-action aboutNav" data-navto="hobbies"><i class="bi bi-nintendo-switch "></i> Hobbies</button>
                     </div>
 
                     <!--Social Media Links-->
@@ -72,13 +72,36 @@
                             <i class="bi bi-snow"></i> : <span class="snowInputSpan"></span> %
                         </div>
                         <div>
-                            <i class="bi bi-cloud-rain-fill"></i>: <span class="rainInputSpan"></span> %
+                            <i class="bi bi-cloud-rain-fill"></i> : <span class="rainInputSpan"></span> %
                         </div>
                     </div>
                 </div>
                 <!--Body-->
                 <div class="col-10">
-                    Comming Soon!! 
+                    <!--Introduction-->
+                    <div id="introduction" class="aboutDivision">
+                        Introduction :- Under Dev
+                    </div>
+
+                    <!--Education-->
+                    <div id="education" class="d-none aboutDivision">
+                        Education :- Under Dev
+                    </div>
+
+                    <!--Experience-->
+                    <div id="work" class="d-none aboutDivision">
+                        Work :- Under Dev
+                    </div>
+
+                    <!--Projects-->
+                    <div id="projects" class="d-none aboutDivision">
+                        Projects : Under Dev
+                    </div>
+
+                    <!--Hobbies-->
+                    <div id="hobbies" class="d-none aboutDivision">
+                        Hobbies : Under Dev
+                    </div>
                 </div>
             </div>
         </div>
