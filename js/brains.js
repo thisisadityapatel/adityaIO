@@ -27,5 +27,4 @@ $(document).ready(function(){
         $(".snowInputSpan").html(snow);
         $(".rainInputSpan").html(rain);
     });*/
-    
 })
