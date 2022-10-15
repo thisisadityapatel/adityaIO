@@ -84,3 +84,7 @@ body {
     border-radius: 2%;
     max-width: 270px;
 }
+.liSkill{
+    display: inline-block;
+    margin: 0px 5px;
+}
