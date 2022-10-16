@@ -94,10 +94,17 @@ body {
     padding: 4px 8px;
 }
 .greenColor{
-    color: #64ffda;
+    color: #64ffda !important;
 }
 .techListAbout ul{
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+.aboutPageLinkGreen{
+    color: #64ffda !important;
+    text-decoration: none;
+}
+.aboutPageLinkGreen:hover{
+    color: white !important;
 }
