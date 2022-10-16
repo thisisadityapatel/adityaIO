@@ -1,7 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: rgb(17, 17, 17);
-    color: white;
+    color: #e6e6e6;
     animation: fadeIn 2.5s;
 }
 .hover-underline-animation {
@@ -88,11 +88,16 @@ body {
     display: inline-block;
 }
 .positionTitle{
-    background-color: #404040;
+    background-color: #333333;
     color: #64ffda;
     border-radius: 5px;
-    padding: 2px 6px;
+    padding: 4px 8px;
 }
 .greenColor{
-    color: #64ffda
+    color: #64ffda;
+}
+.techListAbout ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
 }

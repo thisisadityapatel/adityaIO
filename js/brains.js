@@ -18,7 +18,8 @@ $(document).ready(function(){
     
     $.ajax(settings).done(function (response) {
 
-        var temp = response.data[0].app_temp;
+        console.log(response);
+        var temp = response.data[0].temp;
         var snow = response.data[0].snow;
         var rain = response.data[0].precip;
 
