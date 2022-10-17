@@ -108,3 +108,33 @@ body {
 .aboutPageLinkGreen:hover{
     color: white !important;
 }
+.companiesListings{
+    list-style-type: none;
+    padding-left:0;
+    margin-top: 0.5rem;
+}
+.companiesListings li{
+    padding: 8px 16px 8px 16px;
+    border-radius: 0.25rem;
+    margin-bottom: 3px;
+}
+.compActive{
+    background-color: #1a1a1a;
+    color: white;
+}
+.companiesListings li:hover{
+    background-color: #262626;
+    color: #64ffda;
+    padding-left: 23px;
+    padding-right: 9px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.experiencePage{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    padding-right: 3rem;
+}
+.scotiabankLogoPage{
+    height: 3.5rem;
+}

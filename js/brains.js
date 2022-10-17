@@ -16,7 +16,7 @@ $(document).ready(function(){
         }
     };
     
-    $.ajax(settings).done(function (response) {
+    /*$.ajax(settings).done(function (response) {
 
         console.log(response);
         var temp = response.data[0].temp;
@@ -26,11 +26,20 @@ $(document).ready(function(){
         $(".tempInputSpan").html(temp);
         $(".snowInputSpan").html(snow);
         $(".rainInputSpan").html(rain);
-    });
+    });*/
 
     $(document).on("click", ".aboutNav", function(){
         var thisDiv = $(this).data("navto");
         $(".aboutDivision").addClass("d-none");
         $("#" + thisDiv).removeClass("d-none");
+    })
+
+    $(document).on("click", ".workCompanyNav", function(){
+        $(".workCompanyNav").removeClass("compActive");
+        $(this).addClass("compActive");
+        
+        $(".compDisplay").addClass("d-none");
+        var thisCompany = $(this).data("companypoint");
+        $(document).find("#" +thisCompany + "Comp").removeClass("d-none");
     })
 })
