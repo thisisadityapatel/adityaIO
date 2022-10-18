@@ -174,3 +174,7 @@ body {
 .ieeeLogoPage{
     height: 5rem;
 }
+.enactusLogoPage{
+    height: 6rem;
+    border-radius: 0.25rem;
+}
