@@ -133,8 +133,37 @@ body {
 .experiencePage{
     margin-top: 4rem;
     margin-left: 4rem;
-    padding-right: 3rem;
+    padding-right: 9rem;
 }
 .scotiabankLogoPage{
     height: 3.5rem;
+}
+.compDurTime{
+    font-style: italic;
+    font-size: 110%;
+    color: #9FA6B2;
+    padding-top: 1.3rem;
+    text-align: right;
+}
+.scotiaImage1{
+    width: 25rem;
+    border-radius: 2%;
+}
+.skillListing{
+    display: inline-block;
+}
+.skillTitle{
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+.projectListing{
+    display: inline-block;
+}
+.projectTitle{
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
 }
