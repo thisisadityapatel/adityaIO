@@ -140,7 +140,7 @@ body {
 }
 .compDurTime{
     font-style: italic;
-    font-size: 110%;
+    font-size: 100%;
     color: #9FA6B2;
     padding-top: 1.3rem;
     text-align: right;
@@ -177,4 +177,42 @@ body {
 .enactusLogoPage{
     height: 6rem;
     border-radius: 0.25rem;
+}
+.projectListings{
+    list-style-type: none;
+    padding-left:0;
+    margin-top: 0.5rem;
+}
+.projectListings li{
+    padding: 8px 16px 8px 16px;
+    border-radius: 0.25rem;
+    margin-bottom: 3px;
+}
+.projActive{
+    background-color: #1a1a1a;
+    color: white;
+}
+.projectListings li:hover{
+    background-color: #262626;
+    color: #64ffda;
+    padding-left: 23px;
+    padding-right: 9px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.githubProjPage{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-right: 7rem;
+}
+.projVisitLinkText{
+    background-color: #3d3d5c;
+    border-radius: 1rem;
+    color: white;
+    padding: 4px;
+}
+.projVisitLink{
+    text-decoration: none;
+    width: 70%;
+    text-align: center;
 }

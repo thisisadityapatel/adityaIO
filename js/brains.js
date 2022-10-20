@@ -17,7 +17,6 @@ $(document).ready(function(){
     };
     
     $.ajax(settings).done(function (response) {
-
         console.log(response);
         var temp = response.data[0].temp;
         var snow = response.data[0].snow;
@@ -41,5 +40,53 @@ $(document).ready(function(){
         $(".compDisplay").addClass("d-none");
         var thisCompany = $(this).data("companypoint");
         $(document).find("#" +thisCompany + "Comp").removeClass("d-none");
+    })
+
+    //Github API Call for listing all the user repositories
+    var projectNavString = "";
+    var projectDisString = "";
+
+    $.ajax({
+        type: "GET",
+        url: "https://api.github.com/users/thisisadityapatel/repos",
+        dataType: "json",
+        success: function(data){
+            for(var i = 0; i < data.length; i++){
+                var thisProject = data[i];
+                projectNavString += "<li class='projGithubNav' data-showProj="+ thisProject.id + ">" + thisProject.name + "</li>";
+                projectDisString += "<div id='" + thisProject.id + "' class='projDisplay d-none'>";
+                projectDisString += "<div class='githubProjPage'>";
+                projectDisString += "<h4>" + thisProject.name + "</h4>";
+                projectDisString += "<ul style='padding : 0 !important; margin-top: 1rem'>";
+
+                $.ajax({
+                    type: "GET",
+                    url: thisProject.languages_url,
+                    dataType: "json",
+                    success: function(langData){
+                        for(let lang in langData){
+                            projectDisString += "<li class='skillListing'><span class='skillTitle'>" + lang + "</span></li>";
+                        }
+                    }
+                })
+
+                projectDisString += "</ul>";
+                projectDisString += "<h5 class='text-secondary mt-5'>Description</h5>";
+                projectDisString += "<hr>";
+                projectDisString += thisProject.description;
+                projectDisString += "<div class='mt-5'><a href='" + thisProject.html_url + "' class='projVisitLink' target='_blank'><div class='projVisitLinkText'><i class='bi bi-link-45deg'></i> Visit Here </div></a></div>";
+                projectDisString += "</div></div>";
+            }
+            $("#navigationProjectList").html(projectNavString);
+            $("#projectDisplayDiv").html(projectDisString);
+        }
+    })
+
+    //managing the projects and lists
+    $(document).on("click", ".projGithubNav", function(){
+        $(".projDisplay").addClass("d-none");
+        var thisProjCode = $(this).attr("data-showProj");
+        console.log(thisProjCode);
+        $(document).find("#" + thisProjCode).removeClass("d-none");
     })
 })
