@@ -16,7 +16,7 @@ $(document).ready(function(){
         }
     };
     
-    /*$.ajax(settings).done(function (response) {
+    $.ajax(settings).done(function (response) {
         var temp = response.data[0].temp;
         var snow = response.data[0].snow;
         var rain = response.data[0].precip;
@@ -24,7 +24,7 @@ $(document).ready(function(){
         $(".tempInputSpan").html(temp);
         $(".snowInputSpan").html(snow);
         $(".rainInputSpan").html(rain);
-    });*/
+    });
 
     $(document).on("click", ".aboutNav", function(){
         var thisDiv = $(this).data("navto");
