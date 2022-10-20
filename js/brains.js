@@ -50,6 +50,7 @@ $(document).ready(function(){
         url: "https://api.github.com/users/thisisadityapatel/repos",
         dataType: "json",
         success: function(data){
+            console.log(data);
             for(var i = 0; i < data.length; i++){
                 var thisProject = data[i];
                 projectNavString += "<li class='projGithubNav' data-showProj="+ thisProject.id + ">" + thisProject.name + "</li>";
@@ -57,8 +58,7 @@ $(document).ready(function(){
                 projectDisString += "<div class='githubProjPage'>";
                 projectDisString += "<div class='fw-bold h4'>" + thisProject.name + "</div>";
                 projectDisString += "<ul style='padding : 0 !important; margin-top: 1rem'>";
-                
-                $.ajax({
+                /*$.ajax({
                     type: "GET",
                     url: thisProject.languages_url,
                     dataType: "json",
@@ -67,8 +67,11 @@ $(document).ready(function(){
                             projectDisString += "<li class='skillListing'><span class='skillTitle'>" + lang + "</span></li>";
                         }
                     }
-                })
+                })*/
 
+                for(var j = 0; j < thisProject.topics.length; j++){
+                    projectDisString += "<li class='skillListing ms-1'><span class='skillTitle'>" + thisProject.topics[j] + "</span></li>";
+                }
                 projectDisString += "</ul>";
                 projectDisString += "<h5 class='text-secondary fst-italic mt-5'>Description</h5>";
                 projectDisString += "<hr>";
