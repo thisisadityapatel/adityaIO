@@ -16,8 +16,7 @@ $(document).ready(function(){
         }
     };
     
-    $.ajax(settings).done(function (response) {
-        console.log(response);
+    /*$.ajax(settings).done(function (response) {
         var temp = response.data[0].temp;
         var snow = response.data[0].snow;
         var rain = response.data[0].precip;
@@ -25,7 +24,7 @@ $(document).ready(function(){
         $(".tempInputSpan").html(temp);
         $(".snowInputSpan").html(snow);
         $(".rainInputSpan").html(rain);
-    });
+    });*/
 
     $(document).on("click", ".aboutNav", function(){
         var thisDiv = $(this).data("navto");
@@ -56,9 +55,9 @@ $(document).ready(function(){
                 projectNavString += "<li class='projGithubNav' data-showProj="+ thisProject.id + ">" + thisProject.name + "</li>";
                 projectDisString += "<div id='" + thisProject.id + "' class='projDisplay d-none'>";
                 projectDisString += "<div class='githubProjPage'>";
-                projectDisString += "<h4>" + thisProject.name + "</h4>";
+                projectDisString += "<div class='fw-bold h4'>" + thisProject.name + "</div>";
                 projectDisString += "<ul style='padding : 0 !important; margin-top: 1rem'>";
-
+                
                 $.ajax({
                     type: "GET",
                     url: thisProject.languages_url,
@@ -71,7 +70,7 @@ $(document).ready(function(){
                 })
 
                 projectDisString += "</ul>";
-                projectDisString += "<h5 class='text-secondary mt-5'>Description</h5>";
+                projectDisString += "<h5 class='text-secondary fst-italic mt-5'>Description</h5>";
                 projectDisString += "<hr>";
                 projectDisString += thisProject.description;
                 projectDisString += "<div class='mt-5'><a href='" + thisProject.html_url + "' class='projVisitLink' target='_blank'><div class='projVisitLinkText'><i class='bi bi-link-45deg'></i> Visit Here </div></a></div>";
@@ -84,6 +83,8 @@ $(document).ready(function(){
 
     //managing the projects and lists
     $(document).on("click", ".projGithubNav", function(){
+        $(".projGithubNav").removeClass("projActive");
+        $(this).addClass("projActive");
         $(".projDisplay").addClass("d-none");
         var thisProjCode = $(this).attr("data-showProj");
         console.log(thisProjCode);

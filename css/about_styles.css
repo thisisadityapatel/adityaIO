@@ -60,13 +60,16 @@ body {
     margin-top: 8rem;
 }
 .instagramLink{
-    color: #C13584;
+    color: #e6005c !important;
 }
-.linkedinList{
-    color: #0072b1;
+.linkedinLink{
+    color: #0095e6 !important;
 }
 .discordLink{
-    color:#7289DA
+    color:#7289DA !important;
+}
+.githubLink{
+    color: white !important;
 }
 .weatherInfo{
     margin-top: 8rem;
@@ -161,6 +164,7 @@ body {
     color: white;
     border-radius: 5px;
     padding: 4px 8px;
+    font-size: 85%;
 }
 .projectListing{
     display: inline-block;
@@ -170,6 +174,7 @@ body {
     color: white;
     border-radius: 5px;
     padding: 4px 8px; 
+    font-size: 85%;
 }
 .ieeeLogoPage{
     height: 5rem;
@@ -215,4 +220,12 @@ body {
     text-decoration: none;
     width: 70%;
     text-align: center;
+}
+.projVisitLinkText:hover{
+    background-color: #4d0099;
+    transition: 0.4s;
+}
+.projActive{
+    background-color: #1a1a1a;
+    color: white;
 }
