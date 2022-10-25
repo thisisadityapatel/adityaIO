@@ -47,7 +47,7 @@ body {
     z-index: 2;
     color: white;
     border-color: #0d6efd;
-    background-color: rgb(17, 17, 17);
+    background-color: #1a1a1a;
 }
 .list-group-item:hover{
     background-color: #262626;
@@ -123,7 +123,7 @@ body {
 }
 .compActive{
     background-color: #1a1a1a;
-    color: white;
+    color: #64ffda;
 }
 .companiesListings li:hover{
     background-color: #262626;
@@ -193,10 +193,6 @@ body {
     border-radius: 0.25rem;
     margin-bottom: 3px;
 }
-.projActive{
-    background-color: #1a1a1a;
-    color: white;
-}
 .projectListings li:hover{
     background-color: #262626;
     color: #64ffda;
@@ -214,7 +210,7 @@ body {
     background-color: #3d3d5c;
     border-radius: 1rem;
     color: white;
-    padding: 4px;
+    padding: 8px;
 }
 .projVisitLink{
     text-decoration: none;
@@ -227,5 +223,19 @@ body {
 }
 .projActive{
     background-color: #1a1a1a;
-    color: white;
+    color: #64ffda;
+}
+.courseListGrid ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(1);
+}
+.awardListGrid ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(1);
+}
+.tmuImage{
+    width: 12rem;
+    margin-top: 2rem
 }

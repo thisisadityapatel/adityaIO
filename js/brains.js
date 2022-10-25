@@ -93,4 +93,9 @@ $(document).ready(function(){
         console.log(thisProjCode);
         $(document).find("#" + thisProjCode).removeClass("d-none");
     })
+
+    //adding the alert for summer 2022
+    $(document).on("click", "#summerAlert", function(){
+        alert("Yep, this summer of 2023. I'm open to both 4 and 8 month coop/internships/research opportunities.")
+    })
 })
