@@ -1,6 +1,17 @@
 .container{
     max-width: 52vw;
 }
+
+@media(max-width: 600px)
+{
+    .imageDiv{
+        display: none;
+    }
+    .container{
+        max-width: 90vw !important;
+    }
+}
+
 body{
     font-family: 'Quicksand';
     animation: fadeIn 2.5s;
