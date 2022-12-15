@@ -9,6 +9,15 @@
     }
     .container{
         max-width: 90vw !important;
+        font-size: 83% !important;
+    }
+}
+
+@media(min-width: 1920px)
+{
+    .container{
+        max-width: 50vw !important;
+        font-size: 130% !important;
     }
 }
 
