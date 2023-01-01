@@ -4,6 +4,29 @@ body {
     color: #e6e6e6;
     animation: fadeIn 2.5s;
 }
+
+@media(max-width: 600px){
+    .topNavBar{
+        display:none;
+    }
+    .sideNavigationBar{
+        display:none;
+    }
+    .page{
+        margin-top:1rem !important;
+        margin-left: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .profileImageClass{
+        display:none;
+    }
+    .pageEducation{
+        margin-left: 2rem !important; 
+        margin-top: 2rem !important; 
+        padding-right: 0rem !important;
+    }
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -78,6 +101,11 @@ body {
 .page{
     margin-top: 6rem;
     margin-left: 8rem; 
+}
+.pageEducation{
+    margin-left: 4rem; 
+    margin-top: 4rem; 
+    padding-right: 6rem
 }
 .indexImageClass{
     width: 100%;
@@ -238,4 +266,19 @@ body {
 .tmuImage{
     width: 12rem;
     margin-top: 2rem
+}
+.offcanvas{
+    background-color: black !important;
+    color: white !important;
+}
+.aboutIcon{
+    color: white;
+}
+.sidebarNavButtonPhone{
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+.sidebarNavButtonPhone:hover{
+    background-color: #d9d9d9;
 }

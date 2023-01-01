@@ -19,7 +19,7 @@
     </head>
     <body>
         <!--Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark topNavBar">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ms-auto">
@@ -37,13 +37,13 @@
             </div>
         </nav>
 
-
+        <button class="btn sideNavOpenButton mt-2 ms-2" id="sideNavBarOpen"><i class="bi bi-list aboutIcon"></i></button>
 
         <!--creating a the navigation sidebar-->
         <div class="container" style="max-width: 100% !important">
             <div class="row">
                 <!--Side Navigation Bar-->
-                <div class="col-2">
+                <div class="col-2 sideNavigationBar">
                     <div class="list-group mt-2">
                         <button type="button" class="list-group-item list-group-item-action aboutNav active" aria-current="true" data-navto="introduction"> <span class="ms-2">Introduction</span></button>
                         <button type="button" class="list-group-item list-group-item-action aboutNav" data-navto="education"> <i class="bi bi-journals"></i> <span class="ms-2">Education</span></button>
@@ -76,6 +76,86 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Side Navigation Bar Main for Phone Screens-->
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="sideNavBarMainPhone" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn"><i class="bi bi-x-lg aboutIcon sideNavBarMainPhoneClose"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul style="list-style:none">
+                            <li>
+                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="introduction">
+                                    Introduction
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="education">
+                                    Education
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="work">
+                                    Work
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="projects">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="hobbies">
+                                    Hobbies
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul style="list-style:none" class="mt-4">
+                            <li class="fw-bold text-secondary">
+                                Quick Links
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="./resume/Resume_Aditya_Patel.pdf">
+                                    Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="mailto:adityakdpatel@gmail.com">
+                                    Email-Me
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul style="list-style:none" class="mt-4">
+                            <li class="fw-bold text-secondary">
+                                Socials
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="https://www.linkedin.com/in/thisisadityapatel/">
+                                    <i class="bi bi-linkedin socialMediaIcon"></i> <span class="ms-1">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="https://www.instagram.com/thisisadityapatel/">
+                                    <i class="bi bi-instagram socialMediaIcon"></i> <span class="ms-1">Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="https://github.com/thisisadityapatel">
+                                    <i class="bi bi-github socialMediaIcon"></i> <span class="ms-1">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn sidebarNavButtonPhone" href="">
+                                    <i class="bi bi-discord"></i> <span class="ms-1">Discord</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!--Body-->
                 <div class="col-10">
                     <!--Introduction-->
@@ -91,9 +171,6 @@
                                             <li class="roleListings">
                                                 <span class="positionTitle">Software Engineer</span>
                                             </li>
-                                            <li class="roleListings">
-                                                <span class="positionTitle">Full Stack Web Developer</span>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="pt-3">
@@ -105,7 +182,7 @@
                                         Industrious about endeavouring Artificial Intelligence and Algorithm Design.
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col profileImageClass">
                                     <img src="./images/image3.png" alt='~ Profile Image' class="indexImageClass">
                                 </div>
                             </div>
@@ -139,7 +216,7 @@
 
                     <!--Education-->
                     <div id="education" class="d-none aboutDivision">
-                        <div style="margin-left: 4rem; margin-top: 4rem; padding-right: 6rem">
+                        <div class="pageEducation">
 
                             <div class="h4"> Honors Bachelor's of Science, <span class="fw-bold greenColor">Computer Science</span> (Co-op)</div>
                             Toronto Metropolitan University <span class="text-secondary">(September 2021 - May 2026)</span>
@@ -164,7 +241,7 @@
                                         <li><i class="bi bi-caret-right greenColor"></i> CPS209 Computer Science 2</li>
                                         <li><i class="bi bi-caret-right greenColor"></i> CPS213 Computer Organization 1</li>
                                         <li><i class="bi bi-caret-right greenColor"></i> CPS310 Computer Organization 2</li>
-                                        <li><i class="bi bi-caret-right greenColor"></i> MTH207 Calculus and Computational Methods 1</li>
+                                        <li><i class="bi bi-caret-right greenColor"></i> MTH207 Calculus & Computation 1</li>
                                         <li><i class="bi bi-caret-right greenColor"></i> MTH110 Discrete Mathematics I</li>
                                         <li><i class="bi bi-caret-right greenColor"></i> CPS305 Data Structures</li>
                                         <li><i class="bi bi-caret-right greenColor"></i> CPS393 Introduction to UNIX, C and C++</li>

@@ -98,4 +98,15 @@ $(document).ready(function(){
     $(document).on("click", "#summerAlert", function(){
         alert("Yep, this summer of 2023. I'm open to both 4 and 8 month coop/internships/research opportunities.")
     })
+
+    $(document).on("click", "#sideNavBarOpen", function(){
+        $("#sideNavBarMainPhone").addClass("show");
+        $("#sideNavBarMainPhone").css("visibility", "visible");
+    })
+
+    $(document).on("click", ".sideNavBarMainPhoneClose", function(){
+        $("#sideNavBarMainPhone").css("visibility", "none");
+        $("#sideNavBarMainPhone").removeClass("show");
+    })
+
 })
