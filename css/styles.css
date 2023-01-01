@@ -2,6 +2,12 @@
     max-width: 52vw;
 }
 
+@media(min-width: 600px){
+    #sideNavBarOpen{
+        display:none
+    }
+}
+
 @media(max-width: 600px)
 {
     .imageDiv{
@@ -11,6 +17,9 @@
         max-width: 90vw !important;
         font-size: 83% !important;
     }
+    .indexNavigationBar{
+        display: none;
+    }
 }
 
 @media(min-width: 1920px)
@@ -19,6 +28,7 @@
         max-width: 50vw !important;
         font-size: 130% !important;
     }
+    
 }
 
 body{
@@ -124,4 +134,14 @@ p{
 }
 .copyrights{
     font-size: 80%;
+}
+.sideNavOpenButton{
+    background-color: #d9d9d9;
+}
+.sidebarNavButton{
+    width: 100%;
+    text-align: left;
+}
+.sidebarNavButton:hover{
+    background-color: #d9d9d9;
 }
