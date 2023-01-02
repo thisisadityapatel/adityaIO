@@ -109,4 +109,8 @@ $(document).ready(function(){
         $("#sideNavBarMainPhone").removeClass("show");
     })
 
-})
+    $(document).on("click", ".sidebarNavButtonPhoneOption", function(){
+        $("#sideNavBarMainPhone").css("visibility", "none");
+        $("#sideNavBarMainPhone").removeClass("show");
+    })
+}) 

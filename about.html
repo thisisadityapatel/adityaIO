@@ -37,7 +37,9 @@
             </div>
         </nav>
 
-        <button class="btn sideNavOpenButton mt-2 ms-2" id="sideNavBarOpen"><i class="bi bi-list aboutIcon"></i></button>
+        <div>
+            <button class="btn sideNavOpenButton mt-2 ms-2" id="sideNavBarOpen"><i class="bi bi-list aboutIcon"></i></button>
+        </div>
 
         <!--creating a the navigation sidebar-->
         <div class="container" style="max-width: 100% !important">
@@ -77,8 +79,7 @@
                     </div>
                 </div>
 
-                <!--Side Navigation Bar Main for Phone Screens-->
-
+                <!--Side Navigation Bar Main for mobile access view-->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="sideNavBarMainPhone" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
                       <button type="button" class="btn"><i class="bi bi-x-lg aboutIcon sideNavBarMainPhoneClose"></i></button>
@@ -86,27 +87,27 @@
                     <div class="offcanvas-body">
                         <ul style="list-style:none">
                             <li>
-                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="introduction">
+                                <a class="btn sidebarNavButtonPhone aboutNav sidebarNavButtonPhoneOption" data-navto="introduction">
                                     Introduction
                                 </a>
                             </li>
                             <li>
-                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="education">
+                                <a class="btn sidebarNavButtonPhone aboutNav sidebarNavButtonPhoneOption" data-navto="education">
                                     Education
                                 </a>
                             </li>
                             <li>
-                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="work">
+                                <a class="btn sidebarNavButtonPhone aboutNav sidebarNavButtonPhoneOption" data-navto="work">
                                     Work
                                 </a>
                             </li>
                             <li>
-                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="projects">
+                                <a class="btn sidebarNavButtonPhone aboutNav sidebarNavButtonPhoneOption" data-navto="projects">
                                     Projects
                                 </a>
                             </li>
                             <li>
-                                <a class="btn sidebarNavButtonPhone aboutNav" data-navto="hobbies">
+                                <a class="btn sidebarNavButtonPhone aboutNav sidebarNavButtonPhoneOption" data-navto="hobbies">
                                     Hobbies
                                 </a>
                             </li>
@@ -118,12 +119,12 @@
                             </li>
                             <li>
                                 <a class="btn sidebarNavButtonPhone" href="./resume/Resume_Aditya_Patel.pdf">
-                                    Resume
+                                    <i class="bi bi-file-earmark-pdf-fill"></i> <span class="ms-1">Resume</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="btn sidebarNavButtonPhone" href="mailto:adityakdpatel@gmail.com">
-                                    Email-Me
+                                    <i class="bi bi-envelope aboutIcon"></i> <span class="ms-1">Email-Me</span>
                                 </a>
                             </li>
                         </ul>

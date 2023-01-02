@@ -1,7 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: rgb(17, 17, 17);
-    color: #e6e6e6;
+    color: white;
     animation: fadeIn 2.5s;
 }
 
@@ -24,6 +24,12 @@ body {
         margin-left: 2rem !important; 
         margin-top: 2rem !important; 
         padding-right: 0rem !important;
+    }
+}
+
+@media(min-width: 600px){
+    #sideNavBarOpen{
+        display:none;
     }
 }
 
@@ -280,5 +286,5 @@ body {
     color: white;
 }
 .sidebarNavButtonPhone:hover{
-    background-color: #d9d9d9;
+    background-color: #262626;
 }
