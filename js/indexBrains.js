@@ -120,9 +120,9 @@ $(document).ready(function(){
     };
     
     $.ajax(settings).done(function (response) {
-        var temp = response.data[0].temp;
-        var snow = response.data[0].snow;
-        var rain = response.data[0].precip;
+        var temp = Math.round((response.data[0].temp) * 100) / 100;
+        var snow = Math.round(response.data[0].snow * 100) / 100;
+        var rain = Math.round(response.data[0].precip * 100) / 100;
 
         $(".tempInputSpan").html(temp);
         $(".snowInputSpan").html(snow);
