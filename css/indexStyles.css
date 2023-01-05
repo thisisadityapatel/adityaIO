@@ -59,8 +59,24 @@ body{
     font-size: 93%;
     color: #333333;
 }
+.educationDiv{
+    font-size: 93%;
+    color: #333333;
+}
+.experienceDiv{
+    font-size: 93%;
+    color: #333333;
+}
+.hobbiesDiv{
+    font-size: 93%;
+    color: #333333;
+}
 .introDiv p{
     margin-top: 1.8rem;
+}
+.projectDescription{
+    font-size: 93%;
+    color: #333333;
 }
 .introLink{
     text-decoration: none;
